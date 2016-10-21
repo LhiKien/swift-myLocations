@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Message Label)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yug-Tg-5xo">
-                                <frame key="frameInset" minX="55.88%" minY="10" width="286" height="55"/>
+                                <frame key="frameInset" minX="58.82%" minY="10" width="286" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="-322"/>
+            <point key="canvasLocation" x="1253" y="-810"/>
         </scene>
         <!--Tag Location-->
         <scene sceneID="rND-lR-SpQ">
@@ -300,7 +300,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdD-77-q2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070" y="0.0"/>
+            <point key="canvasLocation" x="3405" y="0.0"/>
         </scene>
         <!--Category Picker View Controller-->
         <scene sceneID="1ja-LN-d3M">
@@ -341,7 +341,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAb-ry-DQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fE7-G3-JgC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3815" y="0.0"/>
+            <point key="canvasLocation" x="4151" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -379,7 +379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yj-vU-8ez" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2308" y="0.0"/>
+            <point key="canvasLocation" x="2642" y="0.0"/>
         </scene>
         <!--Locations-->
         <scene sceneID="cza-sx-Lhx">
@@ -429,7 +429,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFf-Jt-gPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="399"/>
+            <point key="canvasLocation" x="1673" y="0.0"/>
         </scene>
         <!--Locations-->
         <scene sceneID="lQc-aB-ty8">
@@ -446,7 +446,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytl-1N-0Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="399"/>
+            <point key="canvasLocation" x="784" y="0.0"/>
         </scene>
         <!--Map-->
         <scene sceneID="G5S-ua-2VB">
@@ -468,7 +468,7 @@
                                 </connections>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Kj-NS-1NZ">
-                                <frame key="frameInset" minY="20" height="44"/>
+                                <frame key="frameInset" minX="-1" minY="20" height="44" maxX="2"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Map" id="ceY-dE-mId">
@@ -491,17 +491,18 @@
                     <tabBarItem key="tabBarItem" title="Map" id="Rju-ys-pzi"/>
                     <connections>
                         <outlet property="mapView" destination="h87-RD-Jnv" id="ASy-se-vRF"/>
+                        <segue destination="cy0-Vu-SNQ" kind="presentation" identifier="EditLocation" id="lIZ-28-EMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D46-hM-AvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="1149"/>
+            <point key="canvasLocation" x="1254" y="795"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QsE-xz-pjp"/>
+        <segue reference="lIZ-28-EMX"/>
     </inferredMetricsTieBreakers>
 </document>

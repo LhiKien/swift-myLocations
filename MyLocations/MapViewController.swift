@@ -4,7 +4,18 @@ import CoreData
 
 class MapViewController: UIViewController {
   var locations = [Location]()
-  var managedObjectContext: NSManagedObjectContext!
+  var managedObjectContext: NSManagedObjectContext! {
+    didSet {
+      NotificationCenter.default.addObserver(
+                          forName: Notification.Name
+                                    .NSManagedObjectContextObjectsDidChange,
+                          object: managedObjectContext, queue: OperationQueue.main) { notification in
+        if self.isViewLoaded {
+          self.updateLocations()
+        }
+      }
+    }
+  }
   
   @IBOutlet weak var mapView: MKMapView!
   
@@ -26,6 +37,20 @@ class MapViewController: UIViewController {
   @IBAction func showLocations() {
     let theRegion = region(for: locations)
     mapView.setRegion(theRegion, animated: true)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "EditLocation" {
+      let navigationController = segue.destination as! UINavigationController
+      let controller = navigationController
+                        .topViewController as! LocationDetailsViewController
+      controller.managedObjectContext = managedObjectContext
+      
+      let button = sender as! UIButton
+      let location = locations[button.tag]
+      controller.locationToEdit = location
+      
+    }
   }
   
   func updateLocations() {
@@ -89,6 +114,7 @@ class MapViewController: UIViewController {
   }
 
   func showLocationDetails(_ sender: UIButton) {
+    performSegue(withIdentifier: "EditLocation", sender: sender)
   }
 
 }
