@@ -451,7 +451,7 @@
         <!--Map-->
         <scene sceneID="G5S-ua-2VB">
             <objects>
-                <viewController id="qBf-Pw-rEY" sceneMemberID="viewController">
+                <viewController id="qBf-Pw-rEY" customClass="MapViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sqz-W0-caE"/>
                         <viewControllerLayoutGuide type="bottom" id="6dl-jS-ZSp"/>
@@ -463,14 +463,25 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h87-RD-Jnv">
                                 <frame key="frameInset" minY="28" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qBf-Pw-rEY" id="B0e-d0-x3g"/>
+                                </connections>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Kj-NS-1NZ">
                                 <frame key="frameInset" minY="20" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Map" id="ceY-dE-mId">
-                                        <barButtonItem key="leftBarButtonItem" title="Locations" id="voc-I4-nPM"/>
-                                        <barButtonItem key="rightBarButtonItem" title="User" id="cBL-m8-jNp"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Locations" id="voc-I4-nPM">
+                                            <connections>
+                                                <action selector="showLocations" destination="qBf-Pw-rEY" id="jqb-UV-Fjt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="User" id="cBL-m8-jNp">
+                                            <connections>
+                                                <action selector="showUser" destination="qBf-Pw-rEY" id="ApL-V0-ZaW"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -478,6 +489,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="Rju-ys-pzi"/>
+                    <connections>
+                        <outlet property="mapView" destination="h87-RD-Jnv" id="ASy-se-vRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D46-hM-AvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
