@@ -28,6 +28,7 @@ class LocationsViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     performFetch()
+    navigationItem.rightBarButtonItem = editButtonItem
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
