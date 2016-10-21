@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let tabBarController = window!.rootViewController as! UITabBarController
-
     
     if let tabBarViewControllers = tabBarController.viewControllers {
       let navigationController = tabBarViewControllers[1]
@@ -34,7 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let _ = locationsViewController.view
       let currentLocationViewController = tabBarViewControllers[0]
                                               as! CurrentLocationViewController
+      let mapViewController = tabBarViewControllers[2] as! MapViewController
+
       currentLocationViewController.managedObjectContext = managedObjectContext
+      mapViewController.managedObjectContext = managedObjectContext
     }
     print(applicationDocumentsDirectory)
     listenForFatalCoreDataNotifcations()
