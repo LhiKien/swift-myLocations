@@ -78,6 +78,12 @@ class LocationDetailsViewController: UITableViewController {
                           heightForRowAt indexPath: IndexPath) -> CGFloat {
     if indexPath.section == 0 && indexPath.row == 0 {
       return 88
+    } else if indexPath.section == 1 {
+      if imageView.isHidden {
+        return 44
+      } else {
+        return 280
+      }
     } else if indexPath.section == 2 && indexPath.row == 2 {
       addressLabel.frame.size = CGSize(width: view.bounds.size.width - 115,
                                        height: 10000)
@@ -254,7 +260,7 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate,
     if let theImage = image {
       show(image: theImage)
     }
-    
+    tableView.reloadData()
     dismiss(animated: true, completion: nil)
   }
   
