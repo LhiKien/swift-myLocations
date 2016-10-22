@@ -101,7 +101,8 @@ class LocationDetailsViewController: UITableViewController {
     if indexPath.section == 0 && indexPath.row == 0  {
       descriptionTextView.becomeFirstResponder()
     } else if indexPath.section == 1 && indexPath.row == 0 {
-      takePhotoWithCamera()
+      choosePhotoFromLibrary()
+      // takePhotoWithCamera()
     }
   }
   
@@ -192,6 +193,14 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate,
   func takePhotoWithCamera() {
     let imagePicker = UIImagePickerController()
     imagePicker.sourceType = .camera
+    imagePicker.delegate = self
+    imagePicker.allowsEditing = true
+    present(imagePicker, animated: true, completion: nil)
+  }
+  
+  func choosePhotoFromLibrary() {
+    let imagePicker = UIImagePickerController()
+    imagePicker.sourceType = .photoLibrary
     imagePicker.delegate = self
     imagePicker.allowsEditing = true
     present(imagePicker, animated: true, completion: nil)
