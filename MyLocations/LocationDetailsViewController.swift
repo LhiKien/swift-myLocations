@@ -17,6 +17,7 @@ class LocationDetailsViewController: UITableViewController {
   var date = Date()
   var descriptionText = ""
   var image: UIImage?
+  var observer: Any!
   
   var locationToEdit: Location? {
     didSet {
@@ -206,16 +207,23 @@ class LocationDetailsViewController: UITableViewController {
   }
   
   func listenForBackgroundNotification() {
-    NotificationCenter.default.addObserver(
+    observer = NotificationCenter.default.addObserver(
                         forName: Notification.Name
                                 .UIApplicationDidEnterBackground,
-                        object: nil, queue: OperationQueue.main) {_ in
-      if self.presentedViewController != nil {
-        self.dismiss(animated: true, completion: nil)
+                        object: nil, queue: OperationQueue.main) {
+      [weak self] _ in
+      if let strongSelf = self {
+        if strongSelf.presentedViewController != nil {
+          strongSelf.dismiss(animated: true, completion: nil)
+        }
+        strongSelf.descriptionTextView.resignFirstResponder()
       }
-      self.descriptionTextView.resignFirstResponder()
-      
     }
+  }
+  
+  deinit {
+    print("*** deinit \(self)")
+    NotificationCenter.default.removeObserver(observer)
   }
 }
 
