@@ -101,6 +101,7 @@ class LocationDetailsViewController: UITableViewController {
     if indexPath.section == 0 && indexPath.row == 0  {
       descriptionTextView.becomeFirstResponder()
     } else if indexPath.section == 1 && indexPath.row == 0 {
+      tableView.deselectRow(at: indexPath, animated: true)
       pickPhoto()
     }
   }
@@ -222,11 +223,14 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate,
     alertController.addAction(cancelAction)
     
     let takePhotoAction = UIAlertAction(title: "Take Photo",
-                                        style: .default, handler: nil)
+                                        style: .default,
+                                        handler: {_ in self
+                                                .takePhotoWithCamera() })
     alertController.addAction(takePhotoAction)
     let chooseFromLibraryAction = UIAlertAction(title: "Choose From Library",
                                                 style: .default,
-                                                handler: nil)
+                                                handler: {_ in self
+                                                  .choosePhotoFromLibrary() })
     alertController.addAction(chooseFromLibraryAction)
     present(alertController, animated: true, completion: nil)
   }
