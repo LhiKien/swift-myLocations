@@ -43,6 +43,7 @@ class LocationDetailsViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    listenForBackgroundNotification()
     
     if let location = locationToEdit {
       title = "Edit Location"
@@ -202,6 +203,19 @@ class LocationDetailsViewController: UITableViewController {
     imageView.isHidden = false
     imageView.frame = CGRect(x: 10, y: 10, width: 260, height: 260)
     addPhotoLabel.isHidden = true
+  }
+  
+  func listenForBackgroundNotification() {
+    NotificationCenter.default.addObserver(
+                        forName: Notification.Name
+                                .UIApplicationDidEnterBackground,
+                        object: nil, queue: OperationQueue.main) {_ in
+      if self.presentedViewController != nil {
+        self.dismiss(animated: true, completion: nil)
+      }
+      self.descriptionTextView.resignFirstResponder()
+      
+    }
   }
 }
 
