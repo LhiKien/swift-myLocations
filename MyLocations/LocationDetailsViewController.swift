@@ -16,6 +16,7 @@ class LocationDetailsViewController: UITableViewController {
   var categoryName = "No Category"
   var date = Date()
   var descriptionText = ""
+  var image: UIImage?
   
   var locationToEdit: Location? {
     didSet {
@@ -37,6 +38,8 @@ class LocationDetailsViewController: UITableViewController {
   @IBOutlet weak var longitudeLabel: UILabel!
   @IBOutlet weak var addressLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var addPhotoLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -186,6 +189,13 @@ class LocationDetailsViewController: UITableViewController {
     }
     descriptionTextView.resignFirstResponder()
   }
+  
+  func show(image: UIImage) {
+    imageView.image = image
+    imageView.isHidden = false
+    imageView.frame = CGRect(x: 10, y: 10, width: 260, height: 260)
+    addPhotoLabel.isHidden = true
+  }
 }
 
 extension LocationDetailsViewController: UIImagePickerControllerDelegate,
@@ -239,6 +249,12 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate,
   func imagePickerController(_ picker: UIImagePickerController,
                              didFinishPickingMediaWithInfo info:
                                                       [String : Any]) {
+    image = info[UIImagePickerControllerEditedImage] as? UIImage
+    
+    if let theImage = image {
+      show(image: theImage)
+    }
+    
     dismiss(animated: true, completion: nil)
   }
   
