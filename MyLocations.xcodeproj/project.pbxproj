@@ -15,6 +15,7 @@
 		EB2C81811DAC67FA00E0B975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C817F1DAC67FA00E0B975 /* LaunchScreen.storyboard */; };
 		EB41506E1DB7B97500F2E0FD /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41506D1DB7B97500F2E0FD /* HudView.swift */; };
 		EB5BC1F81DBC2EE7006CA9BE /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1F71DBC2EE6006CA9BE /* UIImage+Resize.swift */; };
+		EB5BC1FA1DBD7690006CA9BE /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */; };
 		EB5DF26A1DB8472C0010B617 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2691DB8472C0010B617 /* Functions.swift */; };
 		EB5DF26D1DB90A070010B617 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF26B1DB90A060010B617 /* DataModel.xcdatamodeld */; };
 		EB5DF2741DB90C5A0010B617 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */; };
@@ -37,6 +38,7 @@
 		EB2C81821DAC67FA00E0B975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB41506D1DB7B97500F2E0FD /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		EB5BC1F71DBC2EE6006CA9BE /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
 		EB5DF2691DB8472C0010B617 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EB5DF26C1DB90A070010B617 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				EB5DF27A1DB9854A0010B617 /* LocationCell.swift */,
 				EB5DF27F1DBA61B40010B617 /* MapViewController.swift */,
 				EB5BC1F71DBC2EE6006CA9BE /* UIImage+Resize.swift */,
+				EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				EB5DF27B1DB9854A0010B617 /* LocationCell.swift in Sources */,
 				EB5DF26A1DB8472C0010B617 /* Functions.swift in Sources */,
 				EB5DF2801DBA61B40010B617 /* MapViewController.swift in Sources */,
+				EB5BC1FA1DBD7690006CA9BE /* String+AddText.swift in Sources */,
 				EB2C81751DAC67FA00E0B975 /* AppDelegate.swift in Sources */,
 				EB5DF2741DB90C5A0010B617 /* Location+CoreDataClass.swift in Sources */,
 				EB5E0C831DB699C80086923C /* CategoryPickerViewController.swift in Sources */,

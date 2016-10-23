@@ -238,17 +238,17 @@ class CurrentLocationViewController: UIViewController,
   func string(from placemark: CLPlacemark) -> String {
     var line1 = ""
     
-    line1 = add(text: placemark.subThoroughfare, toLine: line1, separatedBy: "")
-    line1 = add(text: placemark.thoroughfare, toLine: line1, separatedBy: " ")
+    line1.add(text: placemark.subThoroughfare, separatedBy: "")
+    line1.add(text: placemark.thoroughfare, separatedBy: " ")
     
     var line2 = ""
     
-    line2 = add(text: placemark.locality, toLine: line2, separatedBy: "")
-    line2 = add(text: placemark.administrativeArea, toLine: line2,
-                separatedBy: " ")
-    line2 = add(text: placemark.postalCode , toLine: line2, separatedBy: " ")
+    line2.add(text: placemark.locality, separatedBy: "")
+    line2.add(text: placemark.administrativeArea,separatedBy: ", ")
+    line2.add(text: placemark.postalCode, separatedBy: ", ")
     
-    return add(text: line2, toLine: line1, separatedBy: "\n")
+    line1.add(text: line2, separatedBy: ",\n")
+    return line1
   }
   
   func configureGetButton() {
@@ -271,18 +271,6 @@ class CurrentLocationViewController: UIViewController,
       updateLabels()
       configureGetButton()
     }
-  }
-  
-  func add(text: String?, toLine line: String,
-           separatedBy separator: String) -> String {
-    var result = line
-    if let text = text {
-      if !line.isEmpty {
-        result += separator
-      }
-      result += text
-    }
-    return result
   }
 }
 
