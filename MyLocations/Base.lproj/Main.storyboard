@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrA-4J-OyP">
-                                <frame key="frameInset" minX="50.00%" minY="297" width="144" height="30"/>
+                                <frame key="frameInset" minX="49.71%" minY="297" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Tag Location"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-Y9-fe1">
-                                <frame key="frameInset" minX="50.32%" width="163" height="30" maxY="91"/>
+                                <frame key="frameInset" minX="49.68%" width="163" height="30" maxY="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Message Label)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yug-Tg-5xo">
-                                <frame key="frameInset" minX="54.29%" minY="9" width="285" height="55"/>
+                                <frame key="frameInset" minX="55.56%" minY="9" width="284" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -486,12 +486,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Map" id="ceY-dE-mId">
-                                        <barButtonItem key="leftBarButtonItem" title="Locations" id="voc-I4-nPM">
+                                        <barButtonItem key="leftBarButtonItem" image="Pin" id="voc-I4-nPM">
                                             <connections>
                                                 <action selector="showLocations" destination="qBf-Pw-rEY" id="jqb-UV-Fjt"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="User" id="cBL-m8-jNp">
+                                        <barButtonItem key="rightBarButtonItem" image="User" id="cBL-m8-jNp">
                                             <connections>
                                                 <action selector="showUser" destination="qBf-Pw-rEY" id="ApL-V0-ZaW"/>
                                             </connections>
@@ -525,10 +525,12 @@
     <resources>
         <image name="Locations" width="30" height="30"/>
         <image name="Map" width="30" height="30"/>
+        <image name="Pin" width="24" height="24"/>
         <image name="Tag" width="30" height="30"/>
+        <image name="User" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QsE-xz-pjp"/>
+        <segue reference="lIZ-28-EMX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.93333333330000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
