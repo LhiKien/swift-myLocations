@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Message Label)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yug-Tg-5xo">
-                                <frame key="frameInset" minX="51.43%" minY="9" width="285" height="55"/>
+                                <frame key="frameInset" minX="52.78%" minY="9" width="284" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,7 +84,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tag" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Tag" image="Tag" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="addressLabel" destination="BAY-3h-fv5" id="BVj-SF-BbW"/>
                         <outlet property="getButton" destination="C5C-Y9-fe1" id="DKP-Kk-V4E"/>
@@ -451,7 +451,7 @@
         <scene sceneID="lQc-aB-ty8">
             <objects>
                 <navigationController id="gTK-Th-Mto" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Locations" id="Iw4-WE-keg"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="Locations" id="Iw4-WE-keg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gw0-wO-iu7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -511,7 +511,7 @@
                             <constraint firstItem="h87-RD-Jnv" firstAttribute="top" secondItem="sqz-W0-caE" secondAttribute="bottom" constant="8" id="rms-oL-NvA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Rju-ys-pzi"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="Rju-ys-pzi"/>
                     <connections>
                         <outlet property="mapView" destination="h87-RD-Jnv" id="ASy-se-vRF"/>
                         <segue destination="cy0-Vu-SNQ" kind="presentation" identifier="EditLocation" id="lIZ-28-EMX"/>
@@ -523,10 +523,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Locations" width="30" height="30"/>
+        <image name="Map" width="30" height="30"/>
+        <image name="Tag" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lIZ-28-EMX"/>
+        <segue reference="QsE-xz-pjp"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.93333333330000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
