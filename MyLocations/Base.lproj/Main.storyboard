@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Message Label)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yug-Tg-5xo">
-                                <frame key="frameInset" minX="52.78%" minY="9" width="284" height="55"/>
+                                <frame key="frameInset" minX="54.29%" minY="9" width="285" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation Controller-->
         <scene sceneID="gkZ-dp-ocp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cy0-Vu-SNQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cy0-Vu-SNQ" customClass="MyNavigationController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TxG-tq-RKG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -450,7 +450,7 @@
         <!--Locations-->
         <scene sceneID="lQc-aB-ty8">
             <objects>
-                <navigationController id="gTK-Th-Mto" sceneMemberID="viewController">
+                <navigationController id="gTK-Th-Mto" customClass="MyNavigationController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Locations" image="Locations" id="Iw4-WE-keg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gw0-wO-iu7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
