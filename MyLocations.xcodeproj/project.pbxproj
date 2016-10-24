@@ -18,6 +18,7 @@
 		EB5BC1FA1DBD7690006CA9BE /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */; };
 		EB5BC1FC1DBE5BF0006CA9BE /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FB1DBE5BF0006CA9BE /* MyTabBarController.swift */; };
 		EB5BC1FE1DBE5D26006CA9BE /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FD1DBE5D26006CA9BE /* MyNavigationController.swift */; };
+		EB5BC2001DBE5F6A006CA9BE /* MyImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */; };
 		EB5DF26A1DB8472C0010B617 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2691DB8472C0010B617 /* Functions.swift */; };
 		EB5DF26D1DB90A070010B617 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF26B1DB90A060010B617 /* DataModel.xcdatamodeld */; };
 		EB5DF2741DB90C5A0010B617 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */; };
@@ -43,6 +44,7 @@
 		EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
 		EB5BC1FB1DBE5BF0006CA9BE /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		EB5BC1FD1DBE5D26006CA9BE /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagePickerController.swift; sourceTree = "<group>"; };
 		EB5DF2691DB8472C0010B617 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EB5DF26C1DB90A070010B617 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */,
 				EB5BC1FB1DBE5BF0006CA9BE /* MyTabBarController.swift */,
 				EB5BC1FD1DBE5D26006CA9BE /* MyNavigationController.swift */,
+				EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				EB09E55F1DB65DEB00DDE0FD /* LocationDetailsViewController.swift in Sources */,
 				EB5BC1FE1DBE5D26006CA9BE /* MyNavigationController.swift in Sources */,
 				EB5DF26D1DB90A070010B617 /* DataModel.xcdatamodeld in Sources */,
+				EB5BC2001DBE5F6A006CA9BE /* MyImagePickerController.swift in Sources */,
 				EB41506E1DB7B97500F2E0FD /* HudView.swift in Sources */,
 				EB5DF2771DB95F890010B617 /* LocationsViewController.swift in Sources */,
 				EB5DF2751DB90C5A0010B617 /* Location+CoreDataProperties.swift in Sources */,
