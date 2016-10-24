@@ -14,6 +14,16 @@ class CurrentLocationViewController: UIViewController,
   var performingReverseGeocoding = false
   var lastGeocodingError: Error?
   var timer: Timer?
+  var logoVisible = false
+  lazy var logoButton: UIButton = {
+    let button = UIButton(type: .custom)
+    button.setBackgroundImage(UIImage(named: "Logo"), for: .normal)
+    button.sizeToFit()
+    button.addTarget(self, action: #selector(getLocation), for: .touchUpInside)
+    button.center.x = self.view.bounds.midX
+    button.center.y = 220
+    return button
+  }()
   
   @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var latitudeLabel: UILabel!
@@ -21,6 +31,9 @@ class CurrentLocationViewController: UIViewController,
   @IBOutlet weak var addressLabel: UILabel!
   @IBOutlet weak var tagButton: UIButton!
   @IBOutlet weak var getButton: UIButton!
+  @IBOutlet weak var latitudeTextLabel: UILabel!
+  @IBOutlet weak var longitudeTextLabel: UILabel!
+  @IBOutlet weak var containerView: UIView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -58,6 +71,9 @@ class CurrentLocationViewController: UIViewController,
       return
     }
     
+    if logoVisible {
+      hideLogoView()
+    }
     if updatingLocation {
       stopLocationManager()
     } else {
@@ -100,12 +116,17 @@ class CurrentLocationViewController: UIViewController,
       } else {
         addressLabel.text = "No Address Found"
       }
+      
+      latitudeTextLabel.isHidden = false
+      longitudeTextLabel.isHidden = false
     } else {
       latitudeLabel.text = ""
       longitudeLabel.text = ""
       addressLabel.text = ""
       tagButton.isHidden = true
       messageLabel.text = "Tap 'Get My Location' to Start"
+      latitudeTextLabel.isHidden = true
+      longitudeTextLabel.isHidden = true
     }
     
     let statusMessage: String
@@ -121,7 +142,8 @@ class CurrentLocationViewController: UIViewController,
     } else if updatingLocation {
       statusMessage = "Searching..."
     } else {
-      statusMessage = "Tap 'Get My Location' to Start"
+      statusMessage = ""
+      showLogoView()
     }
     
     messageLabel.text = statusMessage
@@ -271,6 +293,22 @@ class CurrentLocationViewController: UIViewController,
       updateLabels()
       configureGetButton()
     }
+  }
+  
+  // MARK: - Logo View
+  
+  func showLogoView() {
+    if !logoVisible {
+      logoVisible = true
+      containerView.isHidden = true
+      view.addSubview(logoButton)
+    }
+  }
+  
+  func hideLogoView() {
+    logoVisible = false
+    containerView.isHidden = false
+    logoButton.removeFromSuperview()
   }
 }
 
