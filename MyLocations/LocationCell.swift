@@ -17,6 +17,9 @@ class LocationCell: UITableViewCell {
     descriptionLabel.highlightedTextColor = descriptionLabel.textColor
     addressLabel.textColor = UIColor(white: 1.0, alpha: 0.4)
     addressLabel.highlightedTextColor = addressLabel.textColor
+    photoImageView.layer.cornerRadius = photoImageView.bounds.size.width / 2
+    photoImageView.clipsToBounds = true
+    separatorInset = UIEdgeInsets(top: 0, left: 82, bottom: 0, right: 0)
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
