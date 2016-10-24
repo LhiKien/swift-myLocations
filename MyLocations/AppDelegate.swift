@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       currentLocationViewController.managedObjectContext = managedObjectContext
       mapViewController.managedObjectContext = managedObjectContext
     }
+    customizeAppearance()
     print(applicationDocumentsDirectory)
     listenForFatalCoreDataNotifcations()
     return true
@@ -94,6 +95,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     } else {
       return rootViewController
     }
+  }
+  
+  func customizeAppearance() {
+    UINavigationBar.appearance().barTintColor = UIColor.black
+    UINavigationBar.appearance().titleTextAttributes = [
+                                  NSForegroundColorAttributeName: UIColor.white]
+    UITabBar.appearance().barTintColor = UIColor.black
+    
+    let tintColor = UIColor(red: 255/255.0, green: 238/255.0, blue: 136/255.0, alpha: 1.0)
+    UITabBar.appearance().tintColor = tintColor
   }
 }
 

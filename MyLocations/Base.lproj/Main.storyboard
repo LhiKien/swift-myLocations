@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Latitude Goes Here)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alV-2p-8aQ">
-                                <frame key="frameInset" minY="110" width="173" height="30" maxX="18"/>
+                                <frame key="frameInset" minY="110" width="174" height="30" maxX="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Longitude Goes Here)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCq-YX-41t">
-                                <frame key="frameInset" minY="148" width="184" height="30" maxX="18"/>
+                                <frame key="frameInset" minY="148" width="185" height="30" maxX="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -476,9 +476,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h87-RD-Jnv">
-                                <frame key="frameInset" minY="28" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h87-RD-Jnv">
                                 <connections>
                                     <outlet property="delegate" destination="qBf-Pw-rEY" id="B0e-d0-x3g"/>
                                 </connections>
@@ -506,6 +504,12 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h87-RD-Jnv" firstAttribute="leading" secondItem="XHk-6l-40Y" secondAttribute="leading" id="4vB-T1-e9S"/>
+                            <constraint firstAttribute="bottom" secondItem="h87-RD-Jnv" secondAttribute="bottom" id="apy-Ix-fgh"/>
+                            <constraint firstAttribute="trailing" secondItem="h87-RD-Jnv" secondAttribute="trailing" id="cLJ-Ww-dsb"/>
+                            <constraint firstItem="h87-RD-Jnv" firstAttribute="top" secondItem="sqz-W0-caE" secondAttribute="bottom" constant="8" id="rms-oL-NvA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="Rju-ys-pzi"/>
                     <connections>
@@ -515,14 +519,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D46-hM-AvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="795"/>
+            <point key="canvasLocation" x="1250.7246376811595" y="794.02173913043487"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P9f-Ck-MiM"/>
+        <segue reference="lIZ-28-EMX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.93333333330000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
