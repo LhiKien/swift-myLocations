@@ -30,6 +30,10 @@ class LocationsViewController: UITableViewController {
     super.viewDidLoad()
     performFetch()
     navigationItem.rightBarButtonItem = editButtonItem
+    tableView.backgroundColor = UIColor.black
+    tableView.separatorColor = UIColor(white: 1.0, alpha: 0.2)
+    tableView.indicatorStyle = .white
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

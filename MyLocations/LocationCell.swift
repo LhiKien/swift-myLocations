@@ -8,8 +8,15 @@ class LocationCell: UITableViewCell {
   @IBOutlet weak var photoImageView: UIImageView!
   
   override func awakeFromNib() {
-      super.awakeFromNib()
-      // Initialization code
+    super.awakeFromNib()
+    let selectionView = UIView(frame: CGRect.zero)
+    selectionView.backgroundColor = UIColor(white: 1.0, alpha: 0.2)
+    selectedBackgroundView = selectionView
+    backgroundColor = UIColor.black
+    descriptionLabel.textColor = UIColor.white
+    descriptionLabel.highlightedTextColor = descriptionLabel.textColor
+    addressLabel.textColor = UIColor(white: 1.0, alpha: 0.4)
+    addressLabel.highlightedTextColor = addressLabel.textColor
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
