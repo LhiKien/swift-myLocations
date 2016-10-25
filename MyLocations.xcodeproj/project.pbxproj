@@ -12,7 +12,6 @@
 		EB2C81771DAC67FA00E0B975 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C81761DAC67FA00E0B975 /* CurrentLocationViewController.swift */; };
 		EB2C817C1DAC67FA00E0B975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C817A1DAC67FA00E0B975 /* Main.storyboard */; };
 		EB2C817E1DAC67FA00E0B975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2C817D1DAC67FA00E0B975 /* Assets.xcassets */; };
-		EB2C81811DAC67FA00E0B975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C817F1DAC67FA00E0B975 /* LaunchScreen.storyboard */; };
 		EB41506E1DB7B97500F2E0FD /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41506D1DB7B97500F2E0FD /* HudView.swift */; };
 		EB5BC1F81DBC2EE7006CA9BE /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1F71DBC2EE6006CA9BE /* UIImage+Resize.swift */; };
 		EB5BC1FA1DBD7690006CA9BE /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1F91DBD7690006CA9BE /* String+AddText.swift */; };
@@ -38,7 +37,6 @@
 		EB2C81761DAC67FA00E0B975 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		EB2C817B1DAC67FA00E0B975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB2C817D1DAC67FA00E0B975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB2C81801DAC67FA00E0B975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2C81821DAC67FA00E0B975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB41506D1DB7B97500F2E0FD /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		EB5BC1F71DBC2EE6006CA9BE /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				EB2C81761DAC67FA00E0B975 /* CurrentLocationViewController.swift */,
 				EB2C817A1DAC67FA00E0B975 /* Main.storyboard */,
 				EB2C817D1DAC67FA00E0B975 /* Assets.xcassets */,
-				EB2C817F1DAC67FA00E0B975 /* LaunchScreen.storyboard */,
 				EB2C81821DAC67FA00E0B975 /* Info.plist */,
 				EB09E55E1DB65DEB00DDE0FD /* LocationDetailsViewController.swift */,
 				EB5E0C821DB699C70086923C /* CategoryPickerViewController.swift */,
@@ -197,7 +194,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2C81811DAC67FA00E0B975 /* LaunchScreen.storyboard in Resources */,
 				EB2C817E1DAC67FA00E0B975 /* Assets.xcassets in Resources */,
 				EB5CF0E61DBF01D20006B51B /* Sound.caf in Resources */,
 				EB2C817C1DAC67FA00E0B975 /* Main.storyboard in Resources */,
@@ -240,14 +236,6 @@
 				EB2C817B1DAC67FA00E0B975 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EB2C817F1DAC67FA00E0B975 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB2C81801DAC67FA00E0B975 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -348,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HPWA75Z78H;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -361,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HPWA75Z78H;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
