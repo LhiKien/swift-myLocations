@@ -19,6 +19,7 @@
 		EB5BC1FC1DBE5BF0006CA9BE /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FB1DBE5BF0006CA9BE /* MyTabBarController.swift */; };
 		EB5BC1FE1DBE5D26006CA9BE /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FD1DBE5D26006CA9BE /* MyNavigationController.swift */; };
 		EB5BC2001DBE5F6A006CA9BE /* MyImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */; };
+		EB5CF0E61DBF01D20006B51B /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = EB5CF0E51DBF01D20006B51B /* Sound.caf */; };
 		EB5DF26A1DB8472C0010B617 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2691DB8472C0010B617 /* Functions.swift */; };
 		EB5DF26D1DB90A070010B617 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF26B1DB90A060010B617 /* DataModel.xcdatamodeld */; };
 		EB5DF2741DB90C5A0010B617 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */; };
@@ -45,6 +46,7 @@
 		EB5BC1FB1DBE5BF0006CA9BE /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		EB5BC1FD1DBE5D26006CA9BE /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagePickerController.swift; sourceTree = "<group>"; };
+		EB5CF0E51DBF01D20006B51B /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
 		EB5DF2691DB8472C0010B617 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EB5DF26C1DB90A070010B617 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		EB2C81731DAC67FA00E0B975 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				EB5CF0E41DBF01D20006B51B /* Sound */,
 				EB5DF2721DB90C5A0010B617 /* Location+CoreDataClass.swift */,
 				EB5DF2731DB90C5A0010B617 /* Location+CoreDataProperties.swift */,
 				EB2C81741DAC67FA00E0B975 /* AppDelegate.swift */,
@@ -111,6 +114,14 @@
 				EB5BC1FF1DBE5F6A006CA9BE /* MyImagePickerController.swift */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		EB5CF0E41DBF01D20006B51B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CF0E51DBF01D20006B51B /* Sound.caf */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		EB5DF27C1DBA60900010B617 /* Frameworks */ = {
@@ -188,6 +199,7 @@
 			files = (
 				EB2C81811DAC67FA00E0B975 /* LaunchScreen.storyboard in Resources */,
 				EB2C817E1DAC67FA00E0B975 /* Assets.xcassets in Resources */,
+				EB5CF0E61DBF01D20006B51B /* Sound.caf in Resources */,
 				EB2C817C1DAC67FA00E0B975 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
